@@ -1,0 +1,518 @@
+@font-face {
+  font-family: "font";
+  src: url(./SpoqaHanSansNeo-Bold.ttf);
+}
+body {
+  background-color: rgba(240, 240, 240, 0.781);
+  margin: 0 0;
+}
+* {
+  font-family: "font";
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.wrap {
+  margin: 1% 1%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin: 10px auto;
+  padding-bottom: 100px;
+}
+
+.header .logo {
+  display: flex;
+  position: relative;
+  order: 0;
+}
+
+.header .logo a img {
+  width: 70px;
+}
+
+.searchbar form {
+  display: flex;
+}
+
+
+
+.header .logo-schbar {
+  position: absolute;
+  top: 40px;
+}
+
+.searchbar form input {
+  height: 10px;
+  font-weight: normal;
+  font-size: 15px;
+  border: 3px solid rgb(132, 199, 126);
+  background: rgb(251, 251, 251);
+  border-radius: 3px;
+  font-size: 17px;
+  padding: 10px;
+  color: rgb(17, 17, 17);
+}
+
+.header .logo-schbar .searchbar form input {
+  width: 60%;
+}
+
+.searchbar form a img {
+  width: 61.5px;
+  border-radius: 2px;
+}
+
+.logo-schbar {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  order: 5;
+  position: absolute;
+  right: 0;
+}
+
+.icons .account img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.header .menu-toggle-btn {
+  width: 33px;
+  margin-top: 7px;
+  margin-right: 15px;
+  cursor: pointer;
+  order: 2;
+}
+
+.header .menu-toggle-btn span {
+  display: block;
+  width: 86%;
+  height: 3px;
+  background: #575454;
+}
+
+.header .menu-toggle-btn span:nth-child(2) {
+  margin: 6.4px 0;
+}
+
+.header .account {
+  cursor: pointer;
+}
+
+.header .gnb {
+  z-index: 5;
+  display: none;
+  top: 35px;
+  position: absolute;
+  background: #60be60;
+  width: 100%;
+  height: auto;
+
+}
+
+.header .gnb li {
+  border-bottom: 1px solid #c2e6bb;
+}
+
+.header .gnb li a {
+  display: block;
+  padding: 14px 5% 14px 5%;
+  color: rgb(212, 235, 211);
+}
+
+.header .gnb2 {
+  z-index: 5;
+  display: none;
+  top: 35px;
+  position: absolute;
+  background: #60be60;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.header .gnb li a,
+.header .gnb2 li a {
+  font-size: 20px;
+  text-align: center;
+}
+
+.header .gnb2 li {
+  border-bottom: 1px solid #c2e6bb;
+  text-align: center;
+}
+
+.header .gnb2 li a {
+  display: block;
+  padding: 14px 5% 14px 5%;
+  color: rgb(212, 235, 211);
+}
+
+.header .gnb2 :nth-child(4),
+.header .gnb2 :nth-child(5) {
+  text-align: center;
+  border-bottom: 0;
+}
+
+.header .nav2 .gnb2 li .sectit {
+  font-size: 17px;
+  padding: 10px;
+}
+
+.sectit {
+  font-weight: 100;
+  color: rgb(231, 227, 227);
+  text-align: center;
+}
+
+.header .gnb li :hover {
+  color: black;
+  font-weight: bold;
+}
+
+.header .gnb2 li :hover {
+  color: black;
+  font-weight: bold;
+}
+
+.header .gnb2 :nth-child(4) :hover,
+.header .gnb2 :nth-child(5) :hover {
+  color: black;
+}
+
+.mainsec {
+  margin-top: 30px;
+}
+
+.mainsec .intro {
+  position: relative;
+  height: auto;
+  margin-top: 40px;
+}
+
+.mainsec .intro .recipe-list {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+}
+
+.mainsec .intro ul li {
+  float: left;
+  list-style: none;
+}
+
+.recipe-list li img {
+  width: 550px;
+}
+
+.mainsec .intro h2 {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.mainsec .intro .recipe-list li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mainsec .intro .recipe-list li a:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: #62b381;
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.mainsec .intro .recipe-list li a:hover:before {
+  opacity: 0.86;
+}
+
+.mainsec .intro .recipe-list li .info {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.mainsec .intro .recipe-list li a:hover .info {
+  transform: translateY(23px);
+  opacity: 1;
+}
+
+.mainsec .intro .recipe-list li .info h3 {
+  margin-bottom: 8px;
+  font-size: 26px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.mainsec .intro .recipe-list li .info span {
+  font-size: 15px;
+  color: #fff;
+}
+
+footer {
+  margin: 0 auto;
+  width: 95%;
+  height: 400px;
+  padding-top: 50px;
+  background: #74bb74;
+  opacity: 0.9;
+}
+
+footer .sns ul {
+  margin-top: 5%;
+}
+
+footer .team-info {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+footer .sns ul li a img {
+  width: 55%;
+}
+
+footer .sns ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media all and (min-width: 768px) {
+  .header .menu-toggle-btn span {
+    display: block;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 10px auto;
+    padding-bottom: 0;
+  }
+
+  .header .logo-schbar {
+    position: static;
+  }
+
+  .header .logo {
+    display: flex;
+    position: relative;
+    order: 0;
+  }
+
+  .header .logo a img {
+    width: 80px;
+  }
+
+  .searchbar form {
+    display: flex;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .searchbar {
+    margin-left: 30px;
+    order: 1;
+  }
+
+  .searchbar form input {
+    height: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    border: 3px solid rgb(132, 199, 126);
+    background: rgb(251, 251, 251);
+    border-radius: 3px;
+    font-size: 17px;
+    padding: 10px;
+    color: rgb(17, 17, 17);
+  }
+
+  .header .logo-schbar .searchbar form input {
+    width: 350px;
+  }
+
+  .searchbar form a img {
+    width: 61.5px;
+    border-radius: 2px;
+  }
+
+  .logo-schbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .icons {
+    display: flex;
+    order: 5;
+    position: absolute;
+    right: 0;
+  }
+
+  .icons .account img {
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  .header .menu-toggle-btn {
+    width: 33px;
+    margin-top: 7px;
+    margin-right: 15px;
+    cursor: pointer;
+    order: 2;
+  }
+
+  .header .menu-toggle-btn span {
+    display: block;
+    width: 86%;
+    height: 3px;
+    background: #575454;
+  }
+
+  .header .menu-toggle-btn span:nth-child(2) {
+    margin: 6.3px 0;
+  }
+
+  .header .account {
+    cursor: pointer;
+  }
+  .header .gnb {
+    width: 15%;
+    text-align: center;
+    position: absolute;
+    float: right;
+    right: 5px;
+  }
+
+  .header .gnb li a {
+    display: block;
+    padding: 30px;
+    color: rgb(212, 235, 211);
+  }
+
+  .header .gnb li :hover {
+    color: black;
+    font-weight: bold;
+  }
+
+  .searchbar form input {
+    width: 500px;
+  }
+
+  .header .gnb2 {
+    width: 15%;
+    text-align: center;
+    position: absolute;
+    float: right;
+    right: 5px;
+  }
+
+  .header .gnb2 li a {
+    display: block;
+    padding: 30px;
+    color: rgb(212, 235, 211);
+  }
+
+  .header .gnb2 li :hover {
+    color: black;
+    font-weight: bold;
+  }
+
+  .header .gnb2 :nth-child(4),
+  .header .gnb2 :nth-child(5) {
+    text-align: center;
+    border-bottom: 0;
+    margin: 0 30%;
+  }
+
+  .header .nav2 .gnb2 .sectit {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+  }
+  .header .gnb2 :nth-child(4) :hover,
+  .header .gnb2 :nth-child(5) :hover {
+    color: black;
+  }
+  .searchbar form input {
+    width: 500px;
+  }
+
+  .mainsec {
+    padding-top: 100px;
+  }
+
+  .mainsec .intro h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .recipe-list li img {
+    width: 600px;
+  }
+
+  footer {
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    padding-top: 50px;
+    background: #74bb74;
+    opacity: 0.9;
+  }
+
+  footer .team-info {
+    margin-left: 10px;
+    font-size: 17px;
+    width: 500px;
+    float: left;
+  }
+
+  footer .sns {
+    float: right;
+  }
+
+  footer .sns ul {
+    padding-top: 5%;
+  }
+
+  footer .sns ul li {
+    list-style: none;
+    float: left;
+  }
+
+  footer .sns ul li a img {
+    width: 70%;
+  }
+}
+
+@media all and (min-width: 1040px) {
+  .header .logo-schbar .searchbar form input {
+    width: 500px;
+  }
+}

@@ -1,0 +1,107 @@
+.shop {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  padding: 1%;
+  font-size: 20px;
+}
+
+.shop1 {
+  display: block;
+  text-align: right;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.shop1 {
+  width: 1040px;
+}
+
+.shop1 ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shop1 ul li {
+  margin-left: 5px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.title2 {
+  font-size: 16px;
+}
+
+.shop {
+  margin-top: 40px;
+}
+
+.hover-menu1 {
+  cursor: pointer;
+}
+
+.hover-menu-gnb {
+  position: relative;
+  flex-direction: column;
+}
+
+.wrap .mainsec .shop1 .hover-menu-gnb2 {
+  flex-direction: column;
+  display: none;
+  border: 2px solid black;
+  position: absolute;
+  width: 55px;
+  text-align: center;
+}
+
+.mainsec .shop1 .hover-menu-gnb2 li {
+  border-bottom: 1px solid black;
+}
+
+.mainsec .shop1 .hover-menu-gnb2 :nth-child(3) {
+  border-bottom: none;
+}
+
+.mainsec .shop1 .hover-menu-gnb2 li {
+  margin: 0 0;
+}
+
+.mainbox {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.mainbox .img {
+  width: 310px;
+}
+
+.mainbox .img img {
+  width: 300px;
+  height: 250px;
+}
+
+@media all and (min-width: 768px) {
+  .mainbox .img {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .mainsec .shop1 {
+    float: right;
+  }
+}

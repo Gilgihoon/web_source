@@ -1,0 +1,339 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.board h2 {
+  font-size: 33px;
+  margin: 50px;
+  padding-top: 30px;
+}
+
+.board ul li {
+  float: left;
+}
+
+.gnbb {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.gnbb li {
+  border-right: 1px solid rgb(39, 39, 39);
+  padding: 0 3px;
+}
+
+.gnbb :nth-child(4) {
+  border-style: none;
+}
+
+.gnbb li a {
+  color: rgb(119, 115, 115);
+  font-size: 13px;
+}
+.gnbb li a:hover {
+  color: black;
+}
+
+.topbar {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 25px;
+  margin-top: 50px;
+}
+
+.gnbb2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.gnbb2 ul li {
+  border-right: 1px solid rgb(39, 39, 39);
+  padding: 0 7px;
+}
+
+.gnbb2 :nth-child(8) {
+  border-style: none;
+}
+
+.gnbb2 li a {
+  color: rgb(131, 128, 128);
+  font-size: 12px;
+}
+.gnbb2 li a:hover {
+  color: black;
+}
+
+.search input {
+  height: 20px;
+  border-radius: 3px;
+  padding: 3px;
+  background-color: rgb(255, 255, 255);
+}
+
+.search form button {
+  font-size: 15px;
+  padding: 4px 6px;
+}
+
+.search form {
+  display: flex;
+}
+
+.board-main {
+  width: 100%;
+  border-bottom: 2px solid black;
+  font-size: 12px;
+}
+
+.board-main ul {
+  clear: both;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.board-main ul :nth-child(1) {
+  width: 90%;
+}
+
+.board-main ul :nth-child(2) {
+  float: right;
+  width: 10%;
+}
+
+.board-main ul li a {
+  color: rgb(68, 66, 66);
+}
+
+.board-main ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.board-main ul {
+  border-bottom: 1px solid gray;
+
+}
+
+.board-main ul:nth-child(4) {
+  border-bottom: none;
+  padding-bottom: 5px;
+}
+
+.pagenumber {
+  padding: 50px;
+  font-size: 15px;
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 30px;
+}
+
+.pagenumber ul {
+  position: absolute;
+  left: 28%;
+  line-height: 30px;
+}
+
+.pagenumber ul li a {
+  color: rgb(56, 55, 55);
+}
+
+.pagenumber ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.pagenumber ul li {
+  border-right: 1px solid grey;
+  padding: 0 17px;
+}
+
+.pagenumber ul :nth-child(3) {
+  border-right: none;
+}
+
+.pagenumber button {
+  position: absolute;
+  right: 15px;
+  font-size: 13px;
+  padding: 5px 15px;
+}
+
+@media all and (min-width: 768px) {
+  .board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .board h2 {
+    font-size: 43px;
+    margin: 50px;
+    padding-top: 30px;
+  }
+
+  .board ul li {
+    float: left;
+  }
+
+  .gnbb {
+    margin-bottom: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .gnbb li {
+    border-right: 1px solid rgb(39, 39, 39);
+    padding: 0 10px;
+  }
+
+  .gnbb :nth-child(4) {
+    border-style: none;
+  }
+
+  .gnbb li a {
+    color: rgb(119, 115, 115);
+    font-size: 17px;
+  }
+  .gnbb li a:hover {
+    color: black;
+  }
+
+  .topbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding-bottom: 25px;
+    margin-top: 100px;
+  }
+
+  .gnbb2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .gnbb2 ul {
+    font-size: 15px;
+  }
+
+  .gnbb2 ul li {
+    border-right: 1px solid rgb(39, 39, 39);
+    padding: 0 10px;
+  }
+
+  .gnbb2 :nth-child(8) {
+    border-style: none;
+  }
+
+  .gnbb2 li a {
+    color: rgb(131, 128, 128);
+    font-size: 15px;
+  }
+  .gnbb2 li a:hover {
+    color: black;
+  }
+
+  .search input {
+    height: 20px;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+  }
+
+  .search form button {
+    font-size: 13px;
+    padding: 3px 5px;
+  }
+
+  .search form {
+    display: flex;
+  }
+
+  .board-main {
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    font-size: 17px;
+  }
+
+  .board-main ul {
+    clear: both;
+  }
+
+  .board-main ul :nth-child(2) {
+    float: right;
+    margin-right: 30px;
+  }
+
+  .board-main ul li a {
+    color: rgb(68, 66, 66);
+  }
+
+  .board-main ul li a:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  .board-main ul {
+    border-bottom: 1px solid gray;
+    padding:20px;
+  }
+
+  .board-main ul:nth-child(4) {
+    border-bottom: none;
+    padding-bottom: 5px;
+  }
+
+  .pagenumber {
+    padding: 50px;
+    font-size: 18px;
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 30px;
+  }
+
+  .pagenumber ul {
+    position: absolute;
+    left: 45%;
+    line-height: 30px;
+  }
+
+  .pagenumber ul li a {
+    color: rgb(56, 55, 55);
+  }
+
+  .pagenumber ul li a:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  .pagenumber ul li {
+    border-right: 1px solid grey;
+    padding: 0 17px;
+  }
+
+  .pagenumber ul :nth-child(3) {
+    border-right: none;
+  }
+
+  .pagenumber button {
+    position: absolute;
+    right: 1px;
+    font-size: 15px;
+    padding: 5px 15px;
+  }
+}

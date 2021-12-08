@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/indexsub.css">
+    <link rel="stylesheet" href="css/shop2.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.slider').bxSlider();
+
+        });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 500) {
+                $('.go_top').fadeIn();
+            } else {
+                $('.go_top').fadeOut();
+            }
+
+            $('.go_top').click(function(e) {
+                e.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+        });
+    </script>
+
+
+
+    <div class="wrap">
+        <header class="header">
+            <div class="icons">
+                <span class="menu-toggle-btn">
+                    <span></span>
+                <span></span>
+                <span></span>
+                </span>
+                <div class="account">
+                    <img src="img/user.png" alt="">
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="recipe.html">레시피</a></li>
+                    <li><a href="board.html">게시판</a></li>
+                    <li><a href="shop.html">맛있#</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav2">
+                <ul class="gnb2">
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="">위시리스트</a></li>
+                    <li><a href="">고객지원</a></li>
+                    <li><a class="sectit" href="login.html">로그인</a></li>
+                    <li><a class="sectit" href="singup.html">회원가입</a></li>
+
+                </ul>
+            </nav>
+            <div class="logo-schbar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo3.png" alt=""></a>
+                </div>
+                <div class="searchbar">
+                    <form action="#">
+                        <input type="text" placeholder="재료,레시피 검색">
+                        <a href="#"><img src="img/button.png" alt=""></a>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="shop">맛있#</div>
+
+
+            <section1>
+                <div class="slider">
+                    <div><img src="img/goguma1.jpg"></div>
+                    <div><img src="img/goguma2.jpg"></div>
+                    <div><img src="img/goguma3.jpg"></div>
+                </div>
+
+
+
+
+                <div class="detail">
+                    <p>[특가] 맛군 황토밭 베니하루카</p>
+                    <p>햇 꿀고구마(3kg/5kg/10kg)</p>
+                    <p>황토밭에서 키운 꿀단지 꿀고구마</p>
+                    <p>50%할인!</p>
+                    <p>7,500원</p>
+
+                    <div class="button">
+                        <a href="#">장바구니</a>
+                        <a href="#">바로구매</a>
+                    </div>
+
+                </div>
+
+            </section1>
+
+            <div class="de1">
+                <p> 상세설명 </p>
+            </div>
+
+            <section3>
+                <ul>
+                    <li><img src="img/shop-detail/1.jpg"></li>
+                    <li><img src="img/shop-detail/2.jpg"></li>
+                    <li><img src="img/shop-detail/3.jpg"></li>
+                    <li><img src="img/shop-detail/4.jpg"></li>
+                    <li><img src="img/shop-detail/5.jpg"></li>
+                    <li><img src="img/shop-detail/6.jpg"></li>
+                    <li><img src="img/shop-detail/7.jpg"></li>
+                    <li><img src="img/shop-detail/8.jpg"></li>
+                    <li><img src="img/shop-detail/9.jpg"></li>
+                    <li><img src="img/shop-detail/10.jpg"></li>
+                    <li><img src="img/shop-detail/11.jpg"></li>
+                    <li><img src="img/shop-detail/12.jpg"></li>
+                    <li><img src="img/shop-detail/13.jpg"></li>
+                    <li><img src="img/shop-detail/14.png"></li>
+                    <li><img src="img/shop-detail/15.jpg"></li>
+                </ul>
+            </section3>
+
+            <div class="de2">
+                <p> 제품 후기 </p>
+            </div>
+        
+
+        <div class="review">
+            <ul class="review1">
+                <li>gml***</li>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i> 2021-10-08
+                <li>가격도 저렴하고 완전 꿀고구마네요!</li>
+                <hr>
+                <li>gml***</li>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i> 2021-10-01
+                <li>가격도 저렴하고 완전 꿀고구마네요!</li>
+                <hr>
+                <li>gml***</li>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i> 1988-09-17
+                <li>가격도 저렴하고 완전 꿀고구마네요!</li>
+                <hr>
+                <li>gml***</li>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i> 1996-01-11
+                <li>가격도 저렴하고 완전 꿀고구마네요!</li>
+                <hr>
+                <li>gml***</li>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i>
+                <i class="xi-star"> </i> 1996-01-05
+                <li>가격도 저렴하고 완전 꿀고구마네요!</li>
+
+            </ul>
+        </div>
+    </div>
+        
+
+
+
+        <a href="" class="go_top">
+            <i class="xi-caret-up"></i>
+        </a>
+    </div>
+
+</body>
+
+</html>

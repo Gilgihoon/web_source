@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/indexsub.css">
+    <link rel="stylesheet" href="css/recipe_sub.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>맛있다이어트-레시피</title>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.slider').bxSlider();
+
+        });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 500) {
+                $('.go_top').fadeIn();
+            } else {
+                $('.go_top').fadeOut();
+            }
+
+            $('.go_top').click(function(e) {
+                e.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+        });
+    </script>
+
+    <style>
+        .section .left {
+            left: 10px;
+            background: url('./img/left.png') center center / 100% no-repeat;
+        }
+        
+        .section .right {
+            right: 10px;
+            background: url('./img/right.png') center center / 100% no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrap">
+        <header class="header">
+            <div class="icons">
+                <span class="menu-toggle-btn">
+                    <span></span>
+                <span></span>
+                <span></span>
+                </span>
+                <div class="account">
+                    <img src="img/user.png" alt="">
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="recipe.html">레시피</a></li>
+                    <li><a href="board.html">게시판</a></li>
+                    <li><a href="shop.html">맛있#</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav2">
+                <ul class="gnb2">
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="">위시리스트</a></li>
+                    <li><a href="">고객지원</a></li>
+                    <li><a class="sectit" href="login.html">로그인</a></li>
+                    <li><a class="sectit" href="signup.html">회원가입</a></li>
+
+                </ul>
+            </nav>
+            <div class="logo-schbar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo3.png" alt=""></a>
+                </div>
+                <div class="searchbar">
+                    <form action="#">
+                        <input type="text" placeholder="재료,레시피 검색">
+                        <a href="#"><img src="img/button.png" alt=""></a>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <br><br>
+
+    </div>
+    <div class="recipe_video">
+        <article>
+            <p class="title">- 저염 달걀 장조림 - </p> <br>
+            <p class="title2"> 성인병 예방을 위해 나트륨을 줄이고자 <br> 하시는분 들을 위한 적극 추천 레시피 !</p>
+            <br>
+       
+        </article>
+    </div>
+
+    <br>
+
+
+    <!-- 레시피 상세 페이지-->
+
+    <div class="section">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <input type="radio" name="slide" id="slide04">
+        <input type="radio" name="slide" id="slide05">
+        <input type="radio" name="slide" id="slide06">
+        <input type="radio" name="slide" id="slide07">
+
+        <div class="slidewrap">
+            <!-- 슬라이드 영역 -->
+            <ul class="slidelist">
+                <li class="slideitem">
+                    <a>
+                        <div class="textbox">
+                            <p align="middle"> <iframe width="950" height="680" src="https://www.youtube.com/embed/lYMvrTBaI1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+                    </a>
+                </li>
+                <li class="slideitem">
+                    <a>
+                        <div class="textbox">
+                            <h3>재료 소개</h3>
+                            <p>[재료] <br><br> * 구운계란 또는 삶은 계란 12개 <br> * 돼지안심 <br> * 청양고추 또는 홍고추 3-4개 <br> * 쪽파 2대 <br> * 마늘 5개 <br> * 다시마육수 2/3컵 <br><br> [소스] <br><br> * 저염간장 5큰술 <br> * 쯔유 1작은술 </p>
+                        </div>
+                        <img src="./img/recipe_sub/recipe_1.jpg">
+                    </a>
+                </li>
+                <li class="slideitem">
+                    <a>
+
+                        <div class="textbox">
+                            <h3>
+                                <p>냄비에 물을 붓고 안심, 편으로 썬 생강2쪽, 통마늘4쪽, <br> 대파껍데기, 통후추, 청주2큰술을 넣고 30분정도 삶아 익혀 줍니다.</p>
+                            </h3>
+
+                        </div>
+                        <img src="./img/recipe_sub/recipe_2.jpg">
+                    </a>
+
+                </li>
+                <li class="slideitem">
+                    <a>
+
+                        <div class="textbox">
+                            <h3>
+                                <p>잘 삶아 낸 달걀은 껍질을 깨끗히 벗겨 냅니다.</p>
+                            </h3>
+
+                        </div>
+                        <img src="./img/recipe_sub/recipe_3.jpg">
+                    </a>
+
+                </li>
+                <li class="slideitem">
+                    <a>
+
+                        <div class="textbox">
+                            <h3>
+                                <p>통마늘은 꼭지를 잘라 내고 청양고추도 반으로 썰어 줍니다.</p>
+                            </h3>
+
+                        </div>
+                        <img src="./img/recipe_sub/recipe_4.jpg">
+                    </a>
+
+                </li>
+                <li class="slideitem">
+                    <a>
+
+                        <div class="textbox">
+                            <h3>
+                                <p>냄비에 고기 삶아 낸 물을 채에 걸러 1컵 부어 주고 <br> 맹물1컵, 저염간장 5큰술, 쯔유 1작은술, 설탕, 후추를 뿌린 후 잘 섞어 <br> 달걀과 안심, 통마늘, 청양고추를 넣고 앞뒤로 굴려가며 졸여줍니다.</p>
+                            </h3>
+
+                        </div>
+                        <img src="./img/recipe_sub/recipe_5.jpg">
+                    </a>
+
+                </li>
+                <li class="slideitem">
+                    <a>
+
+                        <div class="textbox">
+                            <h3>
+                                <p>색이 잘 베어든 장조림을 접시에 담아 내주면 <br> 맛있는 저염 계란 안심 장조림 완성 !</p>
+                            </h3>
+
+                        </div>
+                        <img src="./img/recipe_sub/recipe_7.jpg">
+                    </a>
+                </li class="slideitem">
+
+
+                <!-- 좌,우 슬라이드 버튼 -->
+                <div class="slide-control">
+                    <div class="control01">
+                        <label for="slide07" class="left"></label>
+                        <label for="slide02" class="right"></label>
+                    </div>
+                    <div class="control02">
+                        <label for="slide01" class="left"></label>
+                        <label for="slide03" class="right"></label>
+                    </div>
+                    <div class="control03">
+                        <label for="slide02" class="left"></label>
+                        <label for="slide04" class="right"></label>
+                    </div>
+                    <div class="control04">
+                        <label for="slide03" class="left"></label>
+                        <label for="slide05" class="right"></label>
+                    </div>
+
+                    <div class="control05">
+                        <label for="slide04" class="left"></label>
+                        <label for="slide06" class="right"></label>
+                    </div>
+                    <div class="control06">
+                        <label for="slide05" class="left"></label>
+                        <label for="slide07" class="right"></label>
+                    </div>
+                    <div class="control07">
+                        <label for="slide06" class="left"></label>
+                        <label for="slide01" class="right"></label>
+                    </div>
+
+                </div>
+
+            </ul>
+
+            <!-- 페이징 -->
+            <ul class="slide-pagelist">
+                <li><label for="slide01"></label></li>
+                <li><label for="slide02"></label></li>
+                <li><label for="slide03"></label></li>
+                <li><label for="slide04"></label></li>
+                <li><label for="slide05"></label></li>
+                <li><label for="slide06"></label></li>
+                <li><label for="slide07"></label></li>
+            </ul>
+        </div>
+        <!--중간 박스-->
+        <div class="view2_btn">
+            <a class="btn_copy_recipe_id" recipe_id="6966061"><img src="https://recipe1.ezmember.co.kr/img/btn2_id.png" data-toggle="tooltip" title="" data-original-title="레시피ID"></a>
+            <div class="view_qrcode2">
+                <a id="qrcodeLayerBtn" href="javascript:void(0)"><img src="https://recipe1.ezmember.co.kr/img/btn2_qr.png" data-toggle="tooltip" title="" data-original-title="QR코드"></a>
+                <div class="qrcode_layer document_common_layer" style="display:none;">
+                    <p class="qrimg"><img src="https://chart.apis.google.com/chart?cht=qr&amp;chs=150x150&amp;chl=https%3A%2F%2Fwww.10000recipe.com%2Fdownload.html%3Fseq%3D6966061%26new_db%3D1"><span>모바일 레시피</span></p>
+                    <p class="tit">모바일에서 이 레시피를<br>바로 확인 가능합니다.</p>
+                </div>
+                <a href="javascript:void(0)" onclick="javascript:EZ.ATLogin()"><img src="https://recipe1.ezmember.co.kr/img/btn2_note.png" data-toggle="tooltip" title="" data-original-title="메모"></a>
+
+            </div>
+            <div class="view2_btn_r">
+                <a href="javascript:void(0)" onclick="javascript:EZ.ATLogin()"><img src="https://recipe1.ezmember.co.kr/img/btn2_error.png" data-toggle="tooltip" title="" data-original-title="오류 신고"></a>
+                <a href="javascript:void(0)" onclick="doPrint()"><img src="https://recipe1.ezmember.co.kr/img/btn2_print.png" data-toggle="tooltip" title="" data-original-title="레시피 출력"></a>
+            </div>
+        </div>
+
+        <table class="recipe_table">
+            <br>
+            <table border="1">
+                <tr>
+                    <td class="text">
+                        <p> 냄비에 물을 붓고 안심, 편으로 썬 생강2쪽, 통마늘4쪽, <br> 대파껍데기, 통후추, 청주2큰술을 넣고 30분정도 삶아 익혀 줍니다.</p>
+                    </td>
+                    <td class="image"><img src="./img/recipe_sub/recipe_2.jpg"></td>
+                </tr>
+                <tr>
+                    <td class="text">
+                        <p> 잘 삶아 낸 달걀은 껍질을 깨끗히 벗겨 냅니다.</p>
+                    </td>
+                    <td class="image"><img src="./img/recipe_sub/recipe_3.jpg"></td>
+                </tr>
+                <tr>
+                    <td class="text">
+                        <p> 통마늘은 꼭지를 잘라 내고 청양고추도 반으로 썰어 줍니다.</p>
+                    </td>
+                    <td class="image"><img src="./img/recipe_sub/recipe_4.jpg"></td>
+                </tr>
+                <tr>
+                    <td class="text">
+                        <p> 냄비에 고기 삶아 낸 물을 채에 걸러 1컵 부어 주고 <br> 맹물1컵, 저염간장 5큰술, 쯔유 1작은술, 설탕, 후추를 뿌린 후 잘 섞어 <br> 달걀과 안심, 통마늘, 청양고추를 넣고 앞뒤로 굴려가며 졸여줍니다.</p>
+                    </td>
+                    <td class="image"><img src="./img/recipe_sub/recipe_5.jpg"></td>
+                </tr>
+                <tr>
+                    <td class="text">
+                        <p> 색이 잘 베어든 장조림을 접시에 담아 내주면 <br> 맛있는 저염 계란 안심 장조림 완성 !</p>
+                    </td>
+                    <td class="image"><img src="./img/recipe_sub/recipe_7.jpg"></td>
+                </tr>
+            </table>
+        </table>
+
+    </div>
+    <br><br><br>
+
+    <footer class="footer">
+        <div class="team-info">
+            <p>대표 : 길기훈, 김희진, 남현우 /<br> E : help@jipdanjisung.com / <br> F : 031) 281-3688 <br> (주)집단지성컴퍼니 / 사업자등록번호 123-12-12345 / <br> 통신판매업신고 제 2021-용인기흥-0923호 / 벤처기업확인 / <br> 사업자정보확인 경기지방중소기업청 제 031134233-1-01643호 <br>
+                <br><br> Copyright © 집단지성컴퍼니  Inc. All Rights Reserved</p>
+        </div>
+        <div class="sns">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com"><img src="img/fb.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/insta.png" alt=""></a>
+                </li>
+                <li>
+                    <a href=""><img src="img/youtube.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.shop {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 3%;
+  font-size: 60px;
+}
+
+.container {
+  width: 840px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section1 {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.slide > img {
+  width: 300px;
+  height: 0 auto;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail > p {
+  margin-bottom: 0.5rem;
+}
+.detail > p:first-child {
+  font-size: 2rem;
+  text-align: center;
+}
+.detail > p:nth-child(2) {
+  text-align: center;
+}
+.detail > p:nth-child(3) {
+  text-align: center;
+}
+.detail > p:nth-child(4) {
+  text-align: center;
+}
+
+.detail > p:last-of-type {
+  font-size: 2rem;
+  color: red;
+  text-align: right;
+}
+.button {
+  display: flex;
+  margin-left: 3rem;
+  justify-content: space-between;
+}
+.button > a {
+  display: block;
+  border: 1px solid rgb(86, 177, 105);
+  width: 150px;
+  font-size: 1.3rem;
+  font-weight: 1200;
+  margin: 2px;
+  padding: 1rem;
+  border-radius: 0px;
+  text-align: center;
+  color: rgb(86, 177, 105);
+}
+.button > a:hover {
+  color: white;
+  background-color: rgb(86, 177, 105);
+}
+.de1 {
+  background-color: rgb(86, 177, 105);
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  margin-bottom: 10rem;
+  font-size: 1.2rem;
+}
+.de2 {
+  background-color: rgb(86, 177, 105);
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  margin-top: 10rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+/*슬라이더 */
+.slider > div > img {
+  width: 300px;
+  height: 300px;
+}
+.bx-controls-direction {
+  font-size: 50px;
+}
+.bx-controls-direction a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bx-controls-direction .bx-prev {
+  left: 0;
+}
+
+.bx-controls-direction .bx-next {
+  right: 0;
+}
+.bx-controls-direction .bx-prev:before {
+  content: "\e93d";
+  font-family: "xeicon";
+}
+.bx-controls-direction .bx-next:before {
+  content: "\e940";
+  font-family: "xeicon";
+}
+.bx-wrapper {
+  position: relative;
+}
+.slider {
+  text-align: center;
+}
+.bx-pager {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 100%;
+  text-align: center;
+}
+.bx-pager div {
+  display: inline-block;
+  padding: 0 5px;
+}
+.bx-pager div a {
+  display: block;
+  font-size: 0;
+  color: transparent;
+  width: 24px;
+  height: 3px;
+  background-color: #999;
+}
+.bx-pager div a.active {
+  background-color: #000;
+}
+/* 스크롤 업 */
+.go_top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  background-color: rgb(172, 171, 171);
+  color: #fff;
+  right: 50px;
+  bottom: 50px;
+  text-align: center;
+  line-height: 40px;
+  display: none;
+}
+
+/* 상품 후기 */
+hr {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.review{
+  width: 100%;
+  display: inline;
+  align-items: left;
+  position: relative;
+
+}
+.xi-star{
+  color: red;
+}
